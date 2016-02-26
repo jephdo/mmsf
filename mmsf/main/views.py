@@ -13,3 +13,4 @@ def hello():
 def kids_directory():
     kids = ['|'.join([kid.last_name, kid.first_name])for kid in Kids.query.all()]
     return str(len(kids))
+    
