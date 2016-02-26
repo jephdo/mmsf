@@ -59,11 +59,11 @@ class ProductionConfig(Config):
         app.wsgi_app = ProxyFix(app.wsgi_app)
 
         # log to stderr
-        import logging
-        from logging import StreamHandler
-        file_handler = StreamHandler()
-        file_handler.setLevel(logging.WARNING)
-        app.logger.addHandler(file_handler)
+        # import logging
+        # from logging import StreamHandler
+        # file_handler = StreamHandler()
+        # file_handler.setLevel(logging.WARNING)
+        # app.logger.addHandler(file_handler)
 
 
 
