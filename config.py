@@ -66,11 +66,6 @@ class ProductionConfig(Config):
         # app.logger.addHandler(file_handler)
 
 
-
-        ProductionConfig.init_app(app)
-
-
-
 config = dict(
     development=DevelopmentConfig,
     production=ProductionConfig,
