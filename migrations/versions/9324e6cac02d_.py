@@ -51,8 +51,6 @@ def upgrade():
     sa.ForeignKeyConstraint(['school_id'], ['schools.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
-    op.create_index(op.f('ix_kids_email'), 'kids', ['email'], unique=True)
-    op.create_index(op.f('ix_kids_phone'), 'kids', ['phone'], unique=True)
     ### end Alembic commands ###
 
 
